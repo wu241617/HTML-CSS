@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>图片整合</title>
+		<style type="text/css">
+			/* 
+			图片整合技术/CSS sprites/精灵图：
+			【1】，概念：把数张图片整合在一张，利用CSS 的background-image:属性，进行不同的定位，达到显示效果
+			【2】，优势：1，通过图片整合技术，来减少对服务器的请求次数，加快页面加载速度
+			            2，通过图片整合技术，来减小图片的体积
+			【3】，CSS sprites实现技术：滑动门（通过CSS 的background-image:属性，进行不同的定位，达到显示效果）
+			 
+			 */
+			*{
+				margin:0;
+				padding:0;
+			}
+			img{
+				display:block;
+			}
+			.nav{
+				width:500px;
+				height:50px;
+				background-color:cornflowerblue;
+				margin:50px auto;
+				padding-left:100px;
+			}
+			.nav li{
+				list-style:none;
+				float:left;
+			}
+			.nav li a{
+				width:50px;
+				height:50px;
+				padding:0px 20px;
+				text-align:center;
+				line-height:50px;
+				text-decoration: none;
+				color:black;
+				font-size:2em;
+			}
+			.nav li a:hover{
+				background-color:firebrick;
+			}
+		</style>
+		<script type="text/javascript"></script>
+	</head>
+	<body>
+		<ul class="nav">
+			<li><a href="#">首页</a></li>
+			<li><a href="#">美食</a></li>
+			<li><a href="#">风景</a></li>
+			<li><a href="#">小吃</a></li>
+		</ul>
+	</body>
+</html>

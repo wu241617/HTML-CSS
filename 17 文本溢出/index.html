@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>文本溢出</title>
+		<style type="text/css">
+			/* 
+			【1】，overflow:定义超出元素内容区的内容会怎么显示
+			     1,overflow:visible; -->默认不会被裁剪，会出现在元素内容之外
+				 2,overflow:hidden;  -->会裁剪掉超出的内容
+				 3,overflow:scroll;  -->会固定的水平和垂直方向都会出现滚动条
+				 4,overflow:auto;    -->会在内容超出的那一边出现滚动条
+				 5,overflow:inherit; -->继承父元素的overflow值
+				 
+			【2】，white-space:设置如何去处理元素内的空白（代码中出现的空格和换行等）
+			     1,white-space:normal;  -->默认空格显示一个，并且不显示换行
+				 2,white-spce:pre;      -->空白和空格会被浏览器保留
+				 3,white-space:nowarp;  -->文本不会换行，会继续在同一行显示，直到碰到<br/>
+				 4,white-space:pre-warp;-->保留空白，正常换行
+				 5,white-space:pre-line;-->合并空白，保留换行
+				 6,white-space:inherit; -->继承父元素的white-space的值
+			
+			【3】，text-overflow:规定当文本溢出包含元素时发生的事
+			     1,text-overflow:clip;      -->不显示省略号，简单的裁切
+				 2,text-overflow:ellipsis;  -->当文本内容溢出时，显示省略标记（...）
+				【注】在使用text-overflow之前一定要包含  white-space:nowarp; 和 overflow:hidden;  
+				 在使用ul-li列表时，因为有overflow:hidden;存在，所以之前的符号消失，使用list-style-position:inside;显示出来
+			 */
+		</style>
+		<script type="text/javascript">
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

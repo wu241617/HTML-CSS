@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>CSS盒模型</title>
+		<style>
+			/* 
+			 【注】：
+			 1，有一些元素自带有margin和padding值，为了计算宽度和高度的方便，
+			 通常在开发中，加入 *{margin:0;padding:0;}来首先实现页面边距清零操作
+			 
+			 2，在相邻的兄弟块级元素垂直方向上，margin会出现融合的问题，会显示较大的那个值
+			 
+			 3，子级的margin值会传递给父级（只有在top方向上）
+			 解决方法，给父元素加overflow:hidden;
+			 
+			 4,高度塌陷情况：
+			 解决方法  给父元素加固定高度值，或者加上overflow:hidden;
+			 或者在浮动元素下方添加clear:both;height:0;overflow:hidden;/font-size:0;
+			 
+			 
+			 */
+			*{
+				margin:0;
+				padding:0;
+			}
+			#div1{
+				width:500px;
+				height:300px;
+				margin:50px;
+				padding:50px;
+				position:fixed;
+				background-color:red;
+				border:3px solid blue;
+			}
+		</style>
+		<script type="text/javascript">
+			
+		</script>
+	</head>
+	<body>
+		<div id="div1"></div>
+	</body>
+</html>

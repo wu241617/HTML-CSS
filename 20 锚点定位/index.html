@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>锚点链接</title>
+		<style type="text/css">
+			/* 
+			 【1】，锚点链接：页面内位置跳转链接
+			 【2】，设置锚点链接的方法
+			      1，给元素定义命名锚记名
+				  <标记 id="命名锚记名"><标记>
+				  2，命名锚记链接
+				  <a href="#命名锚记名"> <a>
+			 
+			 */
+			*{
+				margin:0;
+				padding:0;
+			}
+			.div1,.div2,.div3{
+				width:200px;
+				height:800px;
+				margin-top:50px;
+				background-color:blue;
+			}
+		</style>
+		<script type="text/javascript"></script>
+	</head>
+	<body>
+		<h1 id="p1">这是页面1</h1>
+		<div  class="div1"></div>
+		<h1 id="p2">这是页面2</h1>
+		<div  class="div1"></div>
+		<h1 id="p3">这是页面3</h1>
+		<div  class="div1"></div>
+		<a href="#p1">回到页面1处</a>&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="#p2">回到页面2处</a>&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="#p3">回到页面3处</a>
+	</body>
+</html>

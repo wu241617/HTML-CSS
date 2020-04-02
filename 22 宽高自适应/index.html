@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>宽高自适应</title>
+		<style type="text/css">
+			/* 
+			【1】，宽高自适应：元素的大小能够根据窗口或者子元素自动调节，这就是自适应。
+			
+			【2】，宽度自适应：元素宽度设置为100%，块元素默认宽度为100%（（即默认宽度自适应）
+			      1，元素具有最小高度自适应 min-height:最小高度 
+				   -->内容超过最小高度的时候，自动撑开，内容小于最小高度的时候，维持最小高度值不变。
+				   【注】，IE6浏览器中，不识别该属性，height有min-height的功能
+				   解决方法：兼容-->min-height:value; _height:value; 或者 min-height:value; height:auto!important; height:value;
+				   
+				  2,元素具有最大高度自适应max-height：最大高度
+				   -->内容超过最大高度的时候，发生溢出；内容小于最大高度的时候，自动撑开，随着缩放
+				   
+				  3，元素具有最小宽度自适应min-width：最小宽度
+				  -->内容超过最小宽度的时候，撑开进行缩放；内容在最小宽度之内的时候，维持最小宽度不变
+				  
+				  4，元素具有最大宽度自适应max-width:最大宽度
+				  -->内容显示在最大宽度，内容没有超过最大宽度的时候，随着内容发生缩放
+				  
+			【3】，高度自适应：
+			      1，元素高度自适应窗口高度：
+				  设置方法-->html.body{height:100%;}
+				  需要自适应的元素-->height:100%;
+				  
+				  2，自适应元素高度：
+				  父元素：height:value;
+				  需要自适应父元素高度的子元素：height:100%;
+				  
+				  【注】height:auto; -->根据块内内容自动调节高度;
+				       height:100%;  -->相对于离他最近的父块高度所定义的高度
+				  
+			 */
+			.box {
+				height: 300px;
+				border: 2px solid red;
+				background-color: green;
+			}
+			.box1{
+				width:600px;
+				min-height:300px;
+				_height:300px;
+				/* height:auto!important;
+				height:300px; */
+				margin-top:50px;
+				border:2px solid red;
+				background-color:green;
+			}
+			.box2{
+				width:600px;
+				max-height:200px;
+				margin-top:50px;
+				border:2px solid red;
+				background-color:green;
+			}
+			.box3{
+				height:200px;
+				min-width:600px;
+				margin-top:50px;
+				border:2px solid red;
+				background-color:green;
+			}
+		</style>
+		<script type="text/javascript"></script>
+	</head>
+	<body>
+		<div class="box"> 1，元素具有最小高度自适应 min-height:最小高度
+			-->内容超过最小高度的时候，自动撑开，内容小于最小高度的时候，维持最小高度值不变。
+			【注】，IE6浏览器中，不识别该属性，height有min-height的功能
+			解决方法：兼容-->min-height:value; _height:value; 或者 min-height:value; height:auto!important; height:value;
+			2,元素具有最大高度自适应max-height：最大高度
+			-->内容超过最大高度的时候，发生溢出；内容小于最大高度的时候，自动撑开，随着缩放
+			3，元素具有最小宽度自适应min-width：最小宽度
+			-->内容超过最小宽度的时候，撑开进行缩放；内容在最小宽度之内的时候，维持最小宽度不变
+			4，元素具有最大宽度自适应max-width:最大宽度
+			-->内容显示在最大宽度，内容没有超过最大宽度的时候，随着内容发生缩放
+			【3】，高度自适应：
+			1，元素高度自适应窗口高度：
+			设置方法-->html.body{height:100%;}
+			需要自适应的元素-->height:100%;
+			2，自适应元素高度：
+			父元素：height:value;
+			需要自适应父元素高度的子元素：height:100%;
+		</div>
+		
+		<div class="box1"> 1，元素具有最小高度自适应 min-height:最小高度
+			-->内容超过最小高度的时候，自动撑开，内容小于最小高度的时候，维持最小高度值不变。
+			【注】，IE6浏览器中，不识别该属性，height有min-height的功能
+			解决方法：兼容-->min-height:value; _height:value; 或者 min-height:value; height:auto!important; height:value;
+			2,元素具有最大高度自适应max-height：最大高度
+			-->内容超过最大高度的时候，发生溢出；内容小于最大高度的时候，自动撑开，随着缩放
+			3，元素具有最小宽度自适应min-width：最小宽度
+			-->内容超过最小宽度的时候，撑开进行缩放；内容在最小宽度之内的时候，维持最小宽度不变
+			4，元素具有最大宽度自适应max-width:最大宽度
+			-->内容显示在最大宽度，内容没有超过最大宽度的时候，随着内容发生缩放
+			【注】，IE6浏览器中，不识别该属性，height有min-height的功能
+			解决方法：兼容-->min-height:value; _height:value; 或者 min-height:value; height:auto!important; height:value;
+			2,元素具有最大高度自适应max-height：最大高度
+			-->内容超过最大高度的时候，发生溢出；内容小于最大高度的时候，自动撑开，随着缩放
+			3，元素具有最小宽度自适应min-width：最小宽度
+			-->内容超过最小宽度的时候，撑开进行缩放；内容在最小宽度之内的时候，维持最小宽度不变
+			4，元素具有最大宽度自适应max-width:最大宽度
+			-->内容显示在最大宽度，内容没有超过最大宽度的时候，随着内容发生缩放
+			【注】，IE6浏览器中，不识别该属性，height有min-height的功能
+			解决方法：兼容-->min-height:value; _height:value; 或者 min-height:value; height:auto!important; height:value;
+			2,元素具有最大高度自适应max-height：最大高度
+			-->内容超过最大高度的时候，发生溢出；内容小于最大高度的时候，自动撑开，随着缩放
+			3，元素具有最小宽度自适应min-width：最小宽度
+			-->内容超过最小宽度的时候，撑开进行缩放；内容在最小宽度之内的时候，维持最小宽度不变
+			4，元素具有最大宽度自适应max-width:最大宽度
+			-->内容显示在最大宽度，内容没有超过最大宽度的时候，随着内容发生缩放
+			【3】，高度自适应：
+			1，元素高度自适应窗口高度：
+			设置方法-->html.body{height:100%;}
+			需要自适应的元素-->height:100%;
+			2，自适应元素高度：
+			父元素：height:value;
+			需要自适应父元素高度的子元素：height:100%;
+			【3】，高度自适应：
+			1，元素高度自适应窗口高度：
+			设置方法-->html.body{height:100%;}
+			需要自适应的元素-->height:100%;
+			2，自适应元素高度：
+			父元素：height:value;
+			需要自适应父元素高度的子元素：height:100%;
+			【3】，高度自适应：
+			1，元素高度自适应窗口高度：
+			设置方法-->html.body{height:100%;}
+			需要自适应的元素-->height:100%;
+			2，自适应元素高度：
+			父元素：height:value;
+			需要自适应父元素高度的子元素：height:100%;
+		</div>
+		
+		<div class="box1"> 1，元素具有最小高度自适应 min-height:最小高度
+			-->内容超过最小高度的时候，自动撑开，内容小于最小高度的时候，维持最小高度值不变。
+			
+		</div>
+		
+		<div class="box2"> 1，元素具有最小高度自适应 min-height:最小高度
+			-->内容超过最小高度的时候，自动撑开，内容小于最小高度的时候，维持最小高度值不变。
+			【注】，IE6浏览器中，不识别该属性，height有min-height的功能
+			解决方法：兼容-->min-height:value; _height:value; 或者 min-height:value; height:auto!important; height:value;
+			2,元素具有最大高度自适应max-height：最大高度
+			-->内容超过最大高度的时候，发生溢出；内容小于最大高度的时候，自动撑开，随着缩放
+			3，元素具有最小宽度自适应min-width：最小宽度
+			-->内容超过最小宽度的时候，撑开进行缩放；内容在最小宽度之内的时候，维持最小宽度不变
+			4，元素具有最大宽度自适应max-width:最大宽度
+			-->内容显示在最大宽度，内容没有超过最大宽度的时候，随着内容发生缩放
+			【3】，高度自适应：
+			1，元素高度自适应窗口高度：
+			设置方法-->html.body{height:100%;}
+			需要自适应的元素-->height:100%;
+			2，自适应元素高度：
+			父元素：height:value;
+			需要自适应父元素高度的子元素：height:100%;
+		</div>
+		
+		<div class="box2"> 1，元素具有最小高度自适应 min-height:最小高度
+			-->内容超过最小高度的时候，自动撑开，内容小于最小高度的时候，维持最小高度值不变。
+		</div>
+		
+		<div class="box3"> 1，元素具有最小高度自适应 min-height:最小高度
+			-->内容超过最小高度的时候，自动撑开，内容小于最小高度的时候，维持最小高度值不变。
+			【注】，IE6浏览器中，不识别该属性，height有min-height的功能
+			解决方法：兼容-->min-height:value; _height:value; 或者 min-height:value; height:auto!important; height:value;
+			2,元素具有最大高度自适应max-height：最大高度
+			-->内容超过最大高度的时候，发生溢出；内容小于最大高度的时候，自动撑开，随着缩放
+			3，元素具有最小宽度自适应min-width：最小宽度
+			-->内容超过最小宽度的时候，撑开进行缩放；内容在最小宽度之内的时候，维持最小宽度不变
+			4，元素具有最大宽度自适应max-width:最大宽度
+			-->内容显示在最大宽度，内容没有超过最大宽度的时候，随着内容发生缩放
+			【3】，高度自适应：
+			1，元素高度自适应窗口高度：
+			设置方法-->html.body{height:100%;}
+			需要自适应的元素-->height:100%;
+			2，自适应元素高度：
+			父元素：height:value;
+			需要自适应父元素高度的子元素：height:100%;
+		</div>
+		
+		<div class="box3"> 1，元素具有最小高度自适应 min-height:最小高度
+			
+		</div>
+	</body>
+</html>

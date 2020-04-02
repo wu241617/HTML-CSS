@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>元素类型</title>
+		<style type="text/css">
+			/* 
+			【1】，元素的类型：
+			     1，块级元素  :eg-->div hr h1-h6 p dl dt dd ol ul form  iframe table tr td th colgroup等 
+				 -->独占一行。
+				 -->默认情况下，高由里面的子元素决定，撑起来；宽占据整个浏览器
+				 -->可以自定义宽高
+				 -->可以容纳其他块元素和内联元素（容器）,h1-h6 p不能在嵌套块元素
+				 
+				 2，内联元素（行内元素）  ：eg-->a span i b em strong
+				 -->在一行里面排列
+				 -->元素和元素之间有一个空格隔开
+				 -->宽高不支持
+				 -->代码换行显示为空格
+				 
+				 3，可变元素:需要根据上下文关系确定是块级元素还是行内元素
+				 -->eg:button del map 等
+			
+			【2】，元素类型的转换：display:用于定义建立布局时元素生成的显示框类型
+			     1,display:none;-->此元素不会被显示，被隐藏起来，脱离文档流
+				 2,display:block;-->转换为块状元素（也可以用浮动）
+				 3,display:inline;-->转换为行内元素
+				 4,display:inline-block;-->兼容块状元素和行内元素的特点 （行内块元素）
+				 5,display:list-item;-->将元素转换为列表（可以使用列表的相关属性）
+			【注】：图片和表单控件都是天然的行内块元素（inline-block）-->可以改变宽高
+				 
+			 
+			 */
+		</style>
+		<script type="text/javascript"></script>
+	</head>
+	<body>
+	</body>
+</html>

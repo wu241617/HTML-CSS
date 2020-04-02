@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin:0;
+				padding:0;
+			}
+			h2{
+				height:60px;
+				line-height:60px;
+				text-align:center;
+				width:100%;
+				background-color:black;
+				color:red;
+			}
+			hr{
+				margin-bottom:20px;
+				border:2px solid red;
+			}
+			table{
+				margin-left:15px;
+			}
+			td,th{
+				height:30px;
+				line-height:30px;
+			}
+			tr:nth-child(even){
+				background-color:pink;
+			}
+			tr:nth-child(odd){
+				background-color:palegreen;
+			}
+			button{
+				width:120px;
+				height:40px;
+				text-align:center;
+				line-height:40px;
+				margin-top:150px;
+				margin-left:450px;
+				background-color:cadetblue;
+				color:white;
+				font-size:16px;
+				border:2px solid black;
+				cursor:pointer;
+			}
+			button:hover{
+				background-color:black;
+				color:red;
+			}
+		</style>
+		<script type="text/javascript" src="jquery-3.4.1.js"></script>
+	</head>
+	<body>
+		<h2>前端技术阶段划分标准</h2>
+		<hr>
+		<table border="1px" cellspacing="0px">
+			<col width="300px">
+			<col width="300px">
+			<col width="300px">
+			<col width="300px">
+			<col width="300px">
+			<tr align="center">
+				<th></th>
+				<th>初级</th>
+				<th>中级</th>
+				<th>高级</th>
+				<th>专家</th>
+			</tr>
+			<tr align="center">
+				<td>标准</td>
+				<td>被产品怼的说不出话</td>
+				<td>跟产品怼不相上下</td>
+				<td>怼的产品无话可说</td>
+				<td>直接将其怼的辞职</td>
+			</tr>
+			<tr align="center">
+				<td>用户A</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr align="center">
+				<td>用户B</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr align="center">
+				<td>用户C</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+		<button>增加记录</button>
+		<button>删除记录</button>
+		<script type="text/javascript">
+			
+			$("button:first").click(function(){
+				$("table").append("<tr align='center'><td>用户D</td><td></td><td></td><td></td><td></td></tr>");
+			})
+			
+			$("button:last").click(function(){
+				$("tr").last().remove();
+			})
+		</script>
+	</body>
+</html>

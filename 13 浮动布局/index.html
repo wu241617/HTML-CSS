@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin:0;
+				padding:0;
+			}
+			h2{
+				width:100%;
+				height:60px;
+				text-align:center;
+				line-height:60px;
+				background-color:black;
+				color:white;
+			}
+			.h2{
+				margin-bottom:0;
+				margin-top: 30px;
+			}
+			#id1{
+				background-color:red;
+				width:100px;
+				height:100px;
+				float:left;
+			}
+			#id2{
+				width:200px;
+				height:200px;
+				background-color:blue;
+			}
+			#div1{
+				width:15%;
+				height:200px;
+				background-color:red;
+				float:left;
+			}
+			#div2{
+				width:60%;
+				height:200px;
+				background-color:green;
+				float:left;
+			}
+			#div3{
+				width:25%;
+				height:200px;
+				background-color:blue;
+				float:left;
+			}
+			#div4{
+				clear:both;
+				height:500px;
+				background-color:yellow;
+			}
+			#chat{
+				margin-bottom:30px;
+				padding:0px;
+				border:1px solid red;
+				border-width:thick;
+				width:400px;
+				overflow:auto;
+			}
+			#ul1 li:nth-child(odd){
+				float:left;
+				margin-left:20px;
+				background-color:gray;
+			}
+			#ul1 li:nth-child(even){
+				float:right;
+				margin-right:20px;
+				background-color:skyblue;
+			}
+			#ul1 li:nth-child(8){
+				margin-bottom:20px;
+			}
+			#ul1 li:nth-child(1){
+				margin-top:20px;
+			}
+			li{
+				width:120px;
+				height:30px;
+				border:1px solid red;
+				clear:both;
+				list-style: none;
+			}
+		</style>
+	</head>
+	<body>
+		<h2>1,文字环绕</h2>
+		<div id="id1"></div>
+		<div id="id2">文字环绕文字环绕文字环绕文字环绕文字环绕文字环绕文字环绕文字环绕文字环绕文字环绕文字环绕</div>
+		<h2 class="h2">2,横向布局</h2>
+		<div id="div1"></div>
+		<div id="div2"></div>
+		<div id="div3"></div>
+		<div id="div4"></div>
+		<h2 class="h2">3,聊天对话框</h2>
+		<div id="chat">
+             <ul id="ul1">
+				 <li ></li>
+				 <li ></li>
+				 <li ></li>
+				 <li ></li>
+				 <li ></li>
+				 <li ></li>
+				 <li ></li>
+				 <li ></li>
+			 </ul>
+		</div>
+	</body>
+</html>
